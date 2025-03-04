@@ -1,4 +1,4 @@
-rows = 4
+rows = 3
 current_number = 1
 
 for i in range(1, rows + 1):
