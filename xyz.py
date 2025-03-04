@@ -11,13 +11,12 @@ while True:
         print("Invalid input. Please enter a valid integer.")
         continue
     
-    user_input = int(user_input)
-    
-    if not (1 <= user_input <= 3999):
+    if not (1 <= int(user_input) <= 3999):
         print("Out of range. Please enter a number between 1 and 3999.")
         continue
     
     roman_string = ""
+    user_input = int(user_input)
     for value, symbol in roman_numerals.items():
         while user_input >= value:
             roman_string += symbol
